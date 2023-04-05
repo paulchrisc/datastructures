@@ -120,3 +120,24 @@ const bnewArr = [1, 2, arr[0], arr[1], arr[2]];
 //or
 
 const newArr = [1, 2, ...arr];
+
+console.log(...newArr); //
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+const mainMenuCopy = [...restaurant.mainMenu]; //shallow copy
+
+const menu2 = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu2);
+
+//iterables: arrays, strings,maps, sets. Not objects
+
+const str = 'Jonas';
+const letters = [...str, '', 'S.'];
+console.log(letters);
+
+//objects
+
+const newRestaurante = { foundedIn: 1998, ...restaurant, founder: 'Giuseppe' };
+console.log(newRestaurante);
