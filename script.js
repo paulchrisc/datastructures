@@ -113,3 +113,10 @@ console.log(open, close);
 // //default values
 // const [p = 1, q = 1, r = 1] = [8, 9];
 // console.log(p, q, r);
+
+const arr = [7, 8, 9];
+const bnewArr = [1, 2, arr[0], arr[1], arr[2]];
+
+//or
+
+const newArr = [1, 2, ...arr];
