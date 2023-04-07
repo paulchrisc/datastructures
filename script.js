@@ -141,3 +141,41 @@ console.log(open, close);
 
 // const newRestaurante = { foundedIn: 1998, ...restaurant, founder: 'Giuseppe' };
 // console.log(newRestaurante);
+
+//spread,
+const arr = [1, 2, 3, ...[4, 5]];
+
+//rest
+
+const [c, d, ...others] = [1, 2, 3, 4, 5];
+console.log(d, d, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+
+console.log(pizza, risotto, otherFood);
+
+//objects
+
+const { sat, ...weekdays } = restaurant.openingHours;
+
+console.log(weekdays);
+
+//functions
+
+const add = function (...numbers) {
+  let ans = 0;
+  for (let x = 0; x < numbers.length; x++) {
+    ans += numbers[x];
+  }
+  console.log(ans);
+};
+
+add(2, 3);
+add(5, 3, 7, 2);
+add(5, 6, 7, 8, 9, 10, 11);
+
+const arrNew = [23, 5, 7];
+add(...arrNew);
