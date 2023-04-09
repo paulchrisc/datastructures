@@ -207,3 +207,33 @@ if (restaurant.orderPizza) {
 }
 
 restaurant.orderPizza && restaurant.orderPizza('mushroom', 'spinach');
+
+//nullish : null and undefined (not 0 or '')
+
+const rest0 = {
+  name: 'Capri',
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+const rest02 = {
+  name: 'La Piazza',
+  owner: 'Giovanni Rossi',
+};
+
+//OR assignment operator
+// rest0.numberGuests = rest0.numGuests || 10;
+// rest02.numberGuests = rest02.numGuests || 10;
+
+// rest0.numGuests ||= 10;
+// rest02.numGuests ||= 10;
+
+//nullish assignment operator
+rest0.numGuests ??= 10;
+rest02.numGuests ??= 10;
+// rest02.owner = rest02.owner && '<Anonymous>';
+// rest0.owner = rest0.owner && '<Anonymous>';
+rest0.owner &&= '<Anonymous>';
+rest02.owner &&= '<Anonymous>';
+console.log(rest0);
+console.log(rest02);
