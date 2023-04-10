@@ -237,3 +237,13 @@ rest0.owner &&= '<Anonymous>';
 rest02.owner &&= '<Anonymous>';
 console.log(rest0);
 console.log(rest02);
+
+const menew = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menew) console.log(item);
+
+for (const item of menew.entries()) {
+  console.log(`${item[0] + 1}: ${item}`);
+}
+
+/////review data structures///////
