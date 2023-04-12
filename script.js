@@ -209,6 +209,7 @@ if (restaurant.orderPizza) {
 restaurant.orderPizza && restaurant.orderPizza('mushroom', 'spinach');
 
 //nullish : null and undefined (not 0 or '')
+//only if the value before ?? is null and undefined will the code short circuit
 
 const rest0 = {
   name: 'Capri',
@@ -250,3 +251,7 @@ for (const item of menew.entries()) {
 //done review destructuring arrays section 103
 //done review destructuring objects section 104
 //done review spread operator
+//done rest pattern and parameters
+//done short circuitting
+//done nullish
+//done logical assignment
