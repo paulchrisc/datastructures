@@ -256,3 +256,4 @@ restaurant.orderDelivery({
 //done short circuitting
 //done nullish
 //done logical assignment
+//review resume // 4/17
