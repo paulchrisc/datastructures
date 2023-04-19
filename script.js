@@ -340,3 +340,28 @@ const restMaps = new Map();
 restMaps.set('name', 'Classico Italiano');
 restMaps.set(1, 'Firenze, Italy');
 console.log(restMaps.set(2, 'Lisbon, Portugal'));
+
+restMaps
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'We are open')
+  .set(false, 'We are closed');
+
+console.log(restMaps.get('name'));
+console.log(restMaps.get(true));
+console.log(restMaps.get(1));
+
+const time = 21;
+console.log(
+  restMaps.get(time > restMaps.get('open') && time < restMaps.get('close'))
+);
+
+console.log(restMaps.has('categories'));
+// restMaps.delete(2);
+const arr = [1, 2];
+restMaps.set(arr, 'Test');
+restMaps.set(document.querySelector('h1'), 'Heading');
+console.log(restMaps);
+
+console.log(restMaps.get(arr));
