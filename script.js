@@ -335,3 +335,8 @@ console.log(staffUnique);
 console.log(
   new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
 );
+
+const restMaps = new Map();
+restMaps.set('name', 'Classico Italiano');
+restMaps.set(1, 'Firenze, Italy');
+console.log(restMaps.set(2, 'Lisbon, Portugal'));
