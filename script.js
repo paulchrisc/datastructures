@@ -541,3 +541,5 @@ checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
 */
+
+//STRING REVIEW
